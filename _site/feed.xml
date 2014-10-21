@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>School for Poetic Computation</title>
+    <description>Reflections on my time at the School for Poetic Computation during Fall 2014.
+</description>
+    <link>http://paigederaedt.github.io/</link>
+    <atom:link href="http://paigederaedt.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 16 Oct 2014 23:27:07 -0400</pubDate>
+    <lastBuildDate>Thu, 16 Oct 2014 23:27:07 -0400</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>&#39;What was the vision?&#39; Reading Reflections [CTOT]</title>
+        <description>&lt;p&gt;This is my first reading reflection post for my Critical Theory of Technology [CTOT] class. The reading that provoked the most thought for me this week was Mindstorms by Seymour Papert. (maybe also because it was the longest…) &lt;/p&gt;
+
+&lt;p&gt;‘It’s about using computers to to challenge current beliefs about who can understand what and at what age.’ - I do feel like I underestimate children’s ability to work with computers. Before this class, I was visiting some relatives at their cottage in northern Michigan and my younger cousin was playing Minecraft, and was insanely good at it (in my opinion). I was so amazed at what she could do in the game being so young (ages 4-7ish). Because I didn’t grow up having access to a computer at that age, it seems inconceivable that children that young can work with it so well.&lt;/p&gt;
+
+&lt;p&gt;I really liked the analogy of learning to communicate with a computer to being exposed to and learning a language in another country. I’ve always wondered why it’s so much easier to learn a language through exposure rather than brute force teaching so it’s really interesting to relate learning a programming language to this. I also never really thought of learning programming in the same context as learning another language such as Spanish or French; maybe because programming isn’t usually spoken, only written?&lt;/p&gt;
+
+&lt;p&gt;‘Breaking a vicious learning cycle without creating a dependence on machines’ - is very important. It’s great to teach children to communicate with a computer at a young age, but it shouldn’t replace any physical hands-on learning.&lt;/p&gt;
+
+&lt;p&gt;‘Our culture has a general perception of mathematics as inaccessible.’  - I happened to really enjoy learning what the paper calls ‘school math’, but I knew plenty of people who had mathphobia as well. There was/is definitely a clear disconnect between skills: those who feel more comfortable in the ‘english/lit/creative’ world and those who feel more comfortable in the ‘analytical/math’ world, and they’re looked at as mutually exclusive spaces. I was lucky to somehow feel inspired by and have a natural affinity for math, but at the same time, I would say I had a writing phobia because of it. Because I was good at math throughout school, I automatically felt that I would not be a good writer and hated writing and literature classes. (Which is strange because I love to read and reflect on reading…) I think this inspires my gravitation towards computational linguistics as it makes language/writing as math-y as possible.&lt;/p&gt;
+
+&lt;p&gt;‘Mathematics must be continuous with well established personal knowledge from which it can inherit a sense of warmth and value as well as cognitive competence.’ - I’ve been thinking a lot about why I like math since reading this paper, and I don’t know if I can articulate why yet…I was taught what the paper calls ‘school math’ and I don’t feel like I had much of a chance or was encouraged to find relevance to something personal, as the author did with gears. In college, what distinguished math from other classes for me was that it was learning and understanding a process rather then memorizing facts. So why do I like math enough to get a degree in it? I don’t quite know. &lt;/p&gt;
+</description>
+        <pubDate>Thu, 16 Oct 2014 17:43:47 -0400</pubDate>
+        <link>http://paigederaedt.github.io/critical/theory/of/technology/2014/10/16/WhatWasTheVisionReadingReflections.html</link>
+        <guid isPermaLink="true">http://paigederaedt.github.io/critical/theory/of/technology/2014/10/16/WhatWasTheVisionReadingReflections.html</guid>
+        
+        
+        <category>critical</category>
+        
+        <category>theory</category>
+        
+        <category>of</category>
+        
+        <category>technology</category>
+        
+      </item>
+    
+      <item>
+        <title>Binary Numbers</title>
+        <description>&lt;p&gt;Today we started learning about binary numbers with Zach. Starting with the basics. I had learned a little bit of binary numbers in university but didn’t have a good foundation, so this was a great refresher. We learned about the most significant vs the least significant digits. We looked at a visualization that took your webcam picture (in black and white) and visualized it based on each bit: what this means is that the color of each pixel was determined by bit ‘n’ (1 –&amp;gt; 8). We were able to see how the least significant digit holds the least information about the image, as the image created by choosing the pixel color from the least significant digit provided the most ambiguous image. Zan explained it in this way and it really made it click for me, so thank you Zan! &lt;/p&gt;
+
+&lt;p&gt;We finished up the day by designing a game/process to teach an 8/80 year old binary numbers. I worked with Zach and Rachel to think about Zach’s idea of using legs to act as on/off switches. We ended up designing a game that required 8 people, 1 to act as each bit in the byte. There were two rules in the game: 1. You can only move forwards and backwards (only alternating –&amp;gt; you can’t move forward twice) 2. you have to make a move when the person to the right steps back. The idea is that the least significant digit is always moving back and forth, and the rest of the places/people follow suit based on the rules. The game is meant to help show how to count up in binary and also to understand how significant each digit is. An alternative to this is to have the people start moving, and then randomly call stop. When stopped, they must say what binary number they are at (but in base 10). &lt;/p&gt;
+
+&lt;p&gt;![Binary Numbers game 1] (/assets/binaryGame_1.jpeg)&lt;/p&gt;
+
+&lt;p&gt;We also supplemented this with a game that helps you create a binary number that is equivalent to a base 10 number. it consisted of a line of ‘switches’ labeled with their 2^n = # starting at 128 and ending at 1. the idea was to take the number given, and start at the left (128) and ask if your number was lower, if yes, then flip the switch on, if no, go on. Each time you flip a switch, you subtract the number on the switch from your number and keep a running total until you get to zero. Once at zero, you are done, and you can see your binary number based on which switches are flipped.&lt;/p&gt;
+
+&lt;p&gt;![Binary Numbers game 2] (/assets/2014-10-0214.58.26.jpg)&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 Oct 2014 17:43:47 -0400</pubDate>
+        <link>http://paigederaedt.github.io/daily/post/2014/10/02/BinaryNumbers.html</link>
+        <guid isPermaLink="true">http://paigederaedt.github.io/daily/post/2014/10/02/BinaryNumbers.html</guid>
+        
+        
+        <category>daily</category>
+        
+        <category>post</category>
+        
+      </item>
+    
+      <item>
+        <title>First Day at the School for Poetic Computation</title>
+        <description>&lt;p&gt;Today was my  first day at the School for Poetic Computation [SFPC], and it was amazing! It started with basic mingling and administration stuff, but I can’t articulate my excitement for what’s in the works. One of the founders, Zach Lieberman, said ‘We work for you’ which was surprising, awesome, and extremely refreshing. The amount of ownership we have in this research experiment is pretty empowering. Zach and the other founder, Taeyoon, handpicked this amazing bunch of indivuals which I’m very proud, intimidated, and lucky to be a part of. Everyone is friendly and diverse, coming from a huge range of experience levels, backgrounds, and locations. There are a few students who are coming to America for the first time for SFPC - and I can’t even fathom what that’s like - kudos to you guys! I am surrounded by so many extremely talented artists, designers, coders, and makers, and I’m incredibly excited to learn from all of them. I hope that I can contribute some perspective and expertise as well!&lt;/p&gt;
+
+&lt;p&gt;We spent the second half of the day experimenting with human fax maachines. Toru, Meghana, Christos, and I had to design a way to decode and encode an image between two groups of people. We started with simple shapes, graduated to shapes with diagonals, and then with curves. We even thought about freeform shapes as well. It’s amazing what complex images you can translate with such minimal rules!&lt;/p&gt;
+
+&lt;p&gt;We finished with a dinner in the 2nd floor kitchen which consisted of homemade salads and himalayan food - it was my first time with himilayan food and it was pretty good! I listened in on a great conversation with Lauren and Christos about their backgrounds and opinions in news/publishing/advertising. Both have some really interesting experience and thoughts about the polictics of those fields. Day one is over and I’ve already learned so much!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Oct 2014 17:43:47 -0400</pubDate>
+        <link>http://paigederaedt.github.io/daily/post/2014/10/01/FirstDayAtSFPC.html</link>
+        <guid isPermaLink="true">http://paigederaedt.github.io/daily/post/2014/10/01/FirstDayAtSFPC.html</guid>
+        
+        
+        <category>daily</category>
+        
+        <category>post</category>
+        
+      </item>
+    
+  </channel>
+</rss>
