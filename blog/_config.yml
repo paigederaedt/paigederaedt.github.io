@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Reflections at the School for Poetic Computation
+name: School for Poetic Computation
 
 # Short bio or description (displayed in the header)
-description: My time at the School for Poetic Computation, fall of 2014
+description: Reflections on my time at the School for Poetic Computation during fall of 2014
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -18,7 +18,7 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble: 
-  email: 
+  email: paigederaedt@gmail.com
   facebook: 
   flickr: 
   github: paigederaedt
