@@ -12,4 +12,4 @@ We finished up the day by designing a game/process to teach an 8/80 year old bin
 
 We also supplemented this with a game that helps you create a binary number that is equivalent to a base 10 number. it consisted of a line of 'switches' labeled with their 2^n = # starting at 128 and ending at 1. the idea was to take the number given, and start at the left (128) and ask if your number was lower, if yes, then flip the switch on, if no, go on. Each time you flip a switch, you subtract the number on the switch from your number and keep a running total until you get to zero. Once at zero, you are done, and you can see your binary number based on which switches are flipped.
 
-![Base 2 from Base 10](https://github.com/paigederaedt/paigederaedt.github.io/blob/master/_assets/2014-10-02 2014.58.26.jpg)
+![Base 2 from Base 10](https://github.com/paigederaedt/paigederaedt.github.io/blob/master/_assets/2014-10-02\ 2014.58.26.jpg)
