@@ -9,6 +9,10 @@ body {
 	word-spacing: -.05em;
 	display: table;
 	width: 100%;
+	padding-top: 40px;
+	padding-bottom:40px;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 .wrapper {
@@ -46,7 +50,7 @@ a:hover{
 
 @media screen and (max-width: 640px) {
 	body{
-		font-size: 24px;
+		font-size: 20px;
 	}
 	
 	.content {

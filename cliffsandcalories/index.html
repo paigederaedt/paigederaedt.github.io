@@ -1,6 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cliffs and Calories</title>
+
+    <!-- Bootstrap -->
+    <link href='http://fonts.googleapis.com/css?family=Loved+by+the+King' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<!--       <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="about.html">Home</a></li>
+              <li><a href="cliffs.html">Cliffs</a></li>
+              <li><a href="calories.html">Calories</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+      </nav> -->
+
+  <body>
+    <h1><a href="www.google.com">Cliffs</a> and <a href="www.google.com">Calories</a></h1>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+
+
+
+
+
 <head>
+
+    <style type="text/css">
+      html, body, #googleMap { height: 500px; margin: 0; padding: 0;}
+    </style>
+
 <script
 src="http://maps.googleapis.com/maps/api/js?v=3&sensor=false">
 </script>
@@ -13,7 +61,8 @@ function initialize()
 var styles = [
   {
     stylers: [
-      { color: "#c1cdcd" }
+      { color: "#ee7621" },
+      { lightness: 20 }
     ]
   },
   {
@@ -30,13 +79,13 @@ var styles = [
       { visiblity: "simplified" }
     ]
   },
-  // {
-  //   featureType: "poi.park",
-  //   elementType: "geometry.fill",
-  //   stylers: [
-  //     { color: '#71bc78' }
-  //   ]
-  // },
+  {
+    featureType: "poi.park",
+    elementType: "geometry.fill",
+    stylers: [
+      { color: '#71bc78' }
+    ]
+  },
   {
     featureType: "administrative.country",
     elementType: "labels",
@@ -62,7 +111,7 @@ var styles = [
     featureType: "administrative.province",
     elementType: "geometry.stroke",
     stylers: [
-      { color: "#031614" },
+      { color: "#006400" },
       { visibility: "on" }
     ]
   },
@@ -79,7 +128,8 @@ var styles = [
 var mapOptions = {
   center:new google.maps.LatLng(39.1067,-94.6764),
   zoom:4,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
+  mapTypeId:google.maps.MapTypeId.ROADMAP,
+  scrollwheel:false
 }
 
 var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
@@ -98,9 +148,32 @@ var markerRI = new google.maps.Marker({
       icon: imageRI,
       title: 'Red Iguana'
   });
+var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Uluru</h3>'+
+      '<div id="bodyContent">'+
+      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+      'sandstone rock formation in the southern part of the '+
+      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+      'south west of the nearest large town, Alice Springs; 450&#160;km '+
+      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+      'Aboriginal people of the area. It has many springs, waterholes, '+
+      'rock caves and ancient paintings. Uluru is listed as a World '+
+      'Heritage Site.</p>'+
+      '<p>Attribution: Uluru, <a href="http://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+      'http://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+      '(last visited June 22, 2009).</p>'+
+      '</div>'+
+      '</div>';
+var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
 
 google.maps.event.addListener(markerRI, 'click', function() {
-      window.open(markerRI.url, '_blank');
+      infowindow.open(map,markerRI);
     });
 
 //End of Red Iguana
@@ -592,7 +665,23 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </head>
 
 <body>
-<div id="googleMap" style="width:890px;height:460px;"></div>
-
+<div id="googleMap"></div>
 </body>
+
+<br><br>
+
+<body>
+<div class="container">
+<div class="jumbotron">
+  <h1 id="jumbo">Cliffs</h1>
+  <p>...</p>
+</div>
+
+<div class="jumbotron">
+  <h1 id="jumbo">Calories</h1>
+  <p>...</p>
+</div>
+</div>
+</body>
+
 </html>
