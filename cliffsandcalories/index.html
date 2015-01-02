@@ -19,18 +19,15 @@
     <![endif]-->
   </head>
 
-<!--       <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="about.html">Home</a></li>
-              <li><a href="cliffs.html">Cliffs</a></li>
-              <li><a href="calories.html">Calories</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
-        </div>
-      </nav> -->
 
   <body>
+
+    <ul class="nav nav-pills">
+      <li role="presentation" class="active"><a href="">Home</a></li>
+      <li role="presentation"><a href="http://paigederaedt.github.io/cliffsandcalories/cliffs">Cliffs</a></li>
+      <li role="presentation"><a href="http://paigederaedt.github.io/cliffsandcalories/calories">Calories</a></li>
+    </ul>
+
     <h1><a href="www.google.com">Cliffs</a> and <a href="www.google.com">Calories</a></h1>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -144,36 +141,25 @@ var imageRI = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerRI = new google.maps.Marker({
       position: RI,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/calories/red-iguana',
       icon: imageRI,
       title: 'Red Iguana'
   });
-var contentString = '<div id="content">'+
+var infoRI = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h3>Uluru</h3>'+
+      '<h3>Red Iguana [Salt Lake City, UT 09_14_2014]</h3>'+
       '<div id="bodyContent">'+
-      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-      'sandstone rock formation in the southern part of the '+
-      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-      'south west of the nearest large town, Alice Springs; 450&#160;km '+
-      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-      'Aboriginal people of the area. It has many springs, waterholes, '+
-      'rock caves and ancient paintings. Uluru is listed as a World '+
-      'Heritage Site.</p>'+
-      '<p>Attribution: Uluru, <a href="http://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'http://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
+      '<ul><li type=disc>sour cream, chicken, and  avocado  enchiladas ' +
+      '<li type=disc>carnitas '+
+      '<li type=disc>sangria </ul>'+
       '</div>'+
       '</div>';
-var infowindow = new google.maps.InfoWindow({
-      content: contentString
+var infowindowRI = new google.maps.InfoWindow({
+      content: infoRI
   });
 
 google.maps.event.addListener(markerRI, 'click', function() {
-      infowindow.open(map,markerRI);
+      infowindowRI.open(map,markerRI);
     });
 
 //End of Red Iguana
@@ -184,13 +170,24 @@ var imageCO = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerCO = new google.maps.Marker({
       position: CO,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/calories/copper-onion',
       icon: imageCO,
       title: 'Copper Onion'
   });
+var infoCO = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Copper Onion [Salt Lake City, UT 09_14_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>cheese cake ' +
+      '<li type=disc>panna cotta </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowCO = new google.maps.InfoWindow({
+      content: infoCO
+  });
 
 google.maps.event.addListener(markerCO, 'click', function() {
-      window.open(markerCO.url, '_blank');
+      infowindowCO.open(map,markerCO);
     });
 
 //End of Copper Onion
@@ -201,13 +198,25 @@ var imageEva = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerEva = new google.maps.Marker({
       position: Eva,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/calories/eva',
       icon: imageEva,
       title: 'Eva'
   });
+var infoEva = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Eva [Salt Lake City, UT 09_12_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>butter lettuce salad ' +
+      '<li type=disc>lamb kibbeh ' +
+      '<li type=disc>baked greek mac and cheese </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowEva = new google.maps.InfoWindow({
+      content: infoEva
+  });
 
 google.maps.event.addListener(markerEva, 'click', function() {
-      window.open(markerEva.url, '_blank');
+      infowindowEva.open(map,markerEva);
     });
 
 //End of Eva
@@ -218,13 +227,26 @@ var imageFC = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerFC = new google.maps.Marker({
       position: FC,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/2/post/2014/05/flying-carpet.html',
       icon: imageFC,
       title: 'Flying Carpet'
   });
+var infoFC = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Flying Carpet [Austin, TX 05_06_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>gran slata ' +
+      '<li type=disc>the big abdu ' +
+      '<li type=disc>the sleek vegetarian ' +
+      '<li type=disc>mejool date </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowFC = new google.maps.InfoWindow({
+      content: infoFC
+  });
 
 google.maps.event.addListener(markerFC, 'click', function() {
-      window.open(markerFC.url, '_blank');
+      infowindowFC.open(map,markerFC);
     });
 
 //End of Flying Carpet
@@ -235,13 +257,28 @@ var imageTD = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerTD = new google.maps.Marker({
       position: TD,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/2/post/2014/05/tacodeli.html',
       icon: imageTD,
       title: 'Tacodeli'
   });
+var infoTD = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Taco Deli [Austin, TX 05_03_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>deli belly ' +
+      '<li type=disc>frontera fundido chicken ' +
+      '<li type=disc>pollo fantastico ' +
+      '<li type=disc>papadulce ' +
+      '<li type=disc>queso ' +
+      '<li type=disc>guacamole </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowTD = new google.maps.InfoWindow({
+      content: infoTD
+  });
 
 google.maps.event.addListener(markerTD, 'click', function() {
-      window.open(markerTD.url, '_blank');
+      infowindowTD.open(map,markerTD);
     });
 
 //End of Tacodeli
@@ -252,13 +289,27 @@ var imageOD = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerOD = new google.maps.Marker({
       position: OD,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/2/post/2014/05/odd-duck.html',
       icon: imageOD,
       title: 'Odd Duck'
   });
+var infoOD = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Odd Duck [Austin, TX 05_04_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>parker house rolls, pig head ' +
+      '<li type=disc>brussel sprouts, deviled egg spread ' +
+      '<li type=disc>baked spaetzle, gulf oysters, bacon, artichoke cream ' +
+      '<li type=disc>black olive pasta, braised goat, sage, parmesan ' +
+      '<li type=disc>white sangria </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowOD = new google.maps.InfoWindow({
+      content: infoOD
+  });
 
 google.maps.event.addListener(markerOD, 'click', function() {
-      window.open(markerOD.url, '_blank');
+      infowindowOD.open(map,markerOD);
     });
 
 //End of Odd Duck
@@ -269,13 +320,23 @@ var imageGordo = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerGordo = new google.maps.Marker({
       position: Gordo,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/2/post/2014/05/gourdoughs.html',
       icon: imageGordo,
       title: 'Gourdough\'s'
   });
+var infoGordo = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Gourdough\'s [Austin, TX 05_04_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>funky monkey </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowGordo = new google.maps.InfoWindow({
+      content: infoGordo
+  });
 
 google.maps.event.addListener(markerGordo, 'click', function() {
-      window.open(markerGordo.url, '_blank');
+      infowindowGordo.open(map,markerGordo);
     });
 
 //End of Gourdough's
@@ -290,9 +351,22 @@ var markerVeracruz = new google.maps.Marker({
       icon: imageVeracruz,
       title: 'Veracruz All Natural'
   });
+var infoVeracruz = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Veracruz All Natural [Austin, TX 05_05_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>guacamole ' +
+      '<li type=disc>migas ' +
+      '<li type=disc>al pastor </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowVeracruz = new google.maps.InfoWindow({
+      content: infoVeracruz
+  });
 
 google.maps.event.addListener(markerVeracruz, 'click', function() {
-      window.open(markerVeracruz.url, '_blank');
+      infowindowVeracruz.open(map,markerVeracruz);
     });
 
 //End of Veracruz All Natural
@@ -303,13 +377,25 @@ var imageMasalaDhaba = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerMasalaDhaba = new google.maps.Marker({
       position: MasalaDhaba,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/2/post/2014/02/masala-dhaba.html',
       icon: imageMasalaDhaba,
       title: 'Masala Dhaba'
   });
+var infoMasalaDhaba = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Masala Dhaba [Austin, TX 02_15_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>dal fry ' +
+      '<li type=disc>samosas ' +
+      '<li type=disc>chicken tikka masala </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowMasalaDhaba = new google.maps.InfoWindow({
+      content: infoMasalaDhaba
+  });
 
 google.maps.event.addListener(markerMasalaDhaba, 'click', function() {
-      window.open(markerMasalaDhaba.url, '_blank');
+      infowindowMasalaDhaba.open(map,markerMasalaDhaba);
     });
 
 //End of Masala Dhaba
@@ -320,13 +406,25 @@ var imageTapasBravas = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerTapasBravas = new google.maps.Marker({
       position: TapasBravas,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/2/post/2014/02/tapas-bravas.html',
       icon: imageTapasBravas,
       title: 'Tapas Bravas'
   });
+var infoTapasBravas = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Tapas Bravas [Austin, TX 02_15_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>fried artichokes ' +
+      '<li type=disc>goat cheese stuffed peppers ' +
+      '<li type=disc>mini chorizos </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowTapasBravas = new google.maps.InfoWindow({
+      content: infoTapasBravas
+  });
 
 google.maps.event.addListener(markerTapasBravas, 'click', function() {
-      window.open(markerTapasBravas.url, '_blank');
+      infowindowTapasBravas.open(map,markerTapasBravas);
     });
 
 //End of Tapas Bravas
@@ -337,13 +435,25 @@ var imageCongressCafe = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerCongressCafe = new google.maps.Marker({
       position: CongressCafe,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/2/post/2014/02/south-congress-cafe.html',
       icon: imageCongressCafe,
       title: 'South Congress Cafe'
   });
+var infoCongressCafe = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>South Congress Cafe [Austin, TX 02_16_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>carrot cake french toast and venison sausage ' +
+      '<li type=disc>goat cheese and bacon omlette ' +
+      '<li type=disc>fresh squeezed orange juice </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowCongressCafe = new google.maps.InfoWindow({
+      content: infoCongressCafe
+  });
 
 google.maps.event.addListener(markerCongressCafe, 'click', function() {
-      window.open(markerCongressCafe.url, '_blank');
+      infowindowCongressCafe.open(map,markerCongressCafe);
     });
 
 //End of South Congress Cafe
@@ -354,13 +464,24 @@ var imageWhipIn = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerWhipIn = new google.maps.Marker({
       position: WhipIn,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/2/post/2014/02/whip-in.html',
       icon: imageWhipIn,
       title: 'Whip In'
   });
+var infoWhipIn = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Whip In [Austin, TX 02_16_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>goat sliders ' +
+      '<li type=disc>lamb taco salad </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowWhipIn = new google.maps.InfoWindow({
+      content: infoWhipIn
+  });
 
 google.maps.event.addListener(markerWhipIn, 'click', function() {
-      window.open(markerWhipIn.url, '_blank');
+      infowindowWhipIn.open(map,markerWhipIn);
     });
 
 //End of Whip In
@@ -371,13 +492,26 @@ var imageYuca = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerYuca = new google.maps.Marker({
       position: Yuca,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/2/post/2014/01/yuca.html',
       icon: imageYuca,
       title: 'Yuca'
   });
+var infoYuca = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Yuca [Miami, FL 01_18_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>cuban pork ' +
+      '<li type=disc>lobster mash ' +
+      '<li type=disc>garlic broccolini ' +
+      '<li type=disc>pina colada </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowYuca = new google.maps.InfoWindow({
+      content: infoYuca
+  });
 
 google.maps.event.addListener(markerYuca, 'click', function() {
-      window.open(markerYuca.url, '_blank');
+      infowindowYuca.open(map,markerYuca);
     });
 
 //End of Yuca
@@ -388,13 +522,24 @@ var imageRitz = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerRitz = new google.maps.Marker({
       position: Ritz,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/2/post/2014/01/ritz-carlton-dilido-beach-club.html',
       icon: imageRitz,
       title: 'Ritz Carlton - Dilido Beach Club'
   });
+var infoRitz = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Ritz Carlton - Dilido Beach Club [Miami, FL 01_18_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>berry mojito ' +
+      '<li type=disc>sangria </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowRitz = new google.maps.InfoWindow({
+      content: infoRitz
+  });
 
 google.maps.event.addListener(markerRitz, 'click', function() {
-      window.open(markerRitz.url, '_blank');
+      infowindowRitz.open(map,markerRitz);
     });
 
 //End of Ritz
@@ -405,13 +550,23 @@ var imageSerendipity = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerSerendipity = new google.maps.Marker({
       position: Serendipity,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/2/post/2014/01/serendipity.html',
       icon: imageSerendipity,
       title: 'Serendipity'
   });
+var infoSerendipity = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Serendipity [Miami, FL 01_18_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>fried cookies and cream sundae </ul> ' +
+      '</div>'+
+      '</div>';
+var infowindowSerendipity = new google.maps.InfoWindow({
+      content: infoSerendipity
+  });
 
 google.maps.event.addListener(markerSerendipity, 'click', function() {
-      window.open(markerSerendipity.url, '_blank');
+      infowindowRitz.open(map,markerSerendipity);
     });
 
 //End of Serendipity
@@ -422,13 +577,23 @@ var imageLouM = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerLouM = new google.maps.Marker({
       position: LouM,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/2/post/2013/12/lou-malnatis-pizza.html',
       icon: imageLouM,
       title: 'Lou Malnati\'s Pizza'
   });
+var infoLouM = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Lou Malnati\'s Pizza [Chicago, IL 12_28_2013]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>malnati\'s classic deep dish </ul> ' +
+      '</div>'+
+      '</div>';
+var infowindowLouM = new google.maps.InfoWindow({
+      content: infoLouM
+  });
 
 google.maps.event.addListener(markerLouM, 'click', function() {
-      window.open(markerLouM.url, '_blank');
+      infowindowLouM.open(map,markerLouM);
     });
 
 //End of Lou Malnati's
@@ -440,13 +605,25 @@ var imageLaN = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerLaN = new google.maps.Marker({
       position: LaN,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/2/post/2013/12/la-note.html',
       icon: imageLaN,
       title: 'La Note'
   });
+var infoLaN = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>La Note [Berkeley, CA 12_07_2013]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>brioche pain perdu ' +
+      '<li type=disc>baguette au brie ' +
+      '<li type=disc>chocolate cream puff </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowLaN = new google.maps.InfoWindow({
+      content: infoLaN
+  });
 
 google.maps.event.addListener(markerLaN, 'click', function() {
-      window.open(markerLaN.url, '_blank');
+      infowindowLaN.open(map,markerLaN);
     });
 
 //End of La Note
@@ -457,13 +634,24 @@ var imageKamdesh = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerKamdesh = new google.maps.Marker({
       position: Kamdesh,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/2/post/2013/09/kamdesh-afghan-kabob-house.html',
       icon: imageKamdesh,
       title: 'Kamdesh Afghan Kabob House'
   });
+var infoKamdesh = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Kamdesh Afghan Kabob House [Oakland, CA 09_21_2013]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>eggplant ' +
+      '<li type=disc>lamb kabob </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowKamdesh = new google.maps.InfoWindow({
+      content: infoKamdesh
+  });
 
 google.maps.event.addListener(markerKamdesh, 'click', function() {
-      window.open(markerKamdesh.url, '_blank');
+      infowindowKamdesh.open(map,markerKamdesh);
     });
 
 //End of Kamdesh Afghan Kabob House
@@ -474,13 +662,23 @@ var imageScopa = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerScopa = new google.maps.Marker({
       position: Scopa,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/2/post/2013/09/scopa-restaurant.html',
       icon: imageScopa,
       title: 'Scopa Restaurant'
   });
+var infoScopa = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Scopa [Healdsburg, CA 09_20_2013]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>chocolate creme brulee </ul> ' +
+      '</div>'+
+      '</div>';
+var infowindowScopa = new google.maps.InfoWindow({
+      content: infoScopa
+  });
 
 google.maps.event.addListener(markerScopa, 'click', function() {
-      window.open(markerScopa.url, '_blank');
+      infowindowScopa.open(map,markerScopa);
     });
 
 //End of Scopa Restaurant
@@ -491,13 +689,25 @@ var imageZingermans = 'https://dl.dropboxusercontent.com/u/12786034/food.png';
 var markerZingermans = new google.maps.Marker({
       position: Zingermans,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/2/post/2013/08/zingermans-roadhouse.html',
       icon: imageZingermans,
       title: 'Zingerman\'s Roadhouse'
   });
+var infoZingermans = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Zingerman\'s [Ann Arbor, MI 08_13_2013]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>sweet potato fries ' +
+      '<ul><li type=disc>mac n cheese ' +
+      '<li type=disc>pulled pork </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowZingermans = new google.maps.InfoWindow({
+      content: infoZingermans
+  });
 
 google.maps.event.addListener(markerZingermans, 'click', function() {
-      window.open(markerZingermans.url, '_blank');
+      infowindowZingermans.open(map,markerZingermans);
     });
 
 //End of Zingerman's
@@ -512,9 +722,21 @@ var markerBootShoe = new google.maps.Marker({
       icon: imageBootShoe,
       title: 'Boot and Shoe Service'
   });
+var infoBootShoe = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Boot and Shoe Service [Oakland, CA 07_20_2013]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>arugula and prociutto pizza ' +
+      '<li type=disc>fried rabbit </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowBootShoe = new google.maps.InfoWindow({
+      content: infoBootShoe
+  });
 
 google.maps.event.addListener(markerBootShoe, 'click', function() {
-      window.open(markerBootShoe.url, '_blank');
+      infowindowBootShoe.open(map,markerBootShoe);
     });
 
 //End of Boot and Shoe Service
@@ -529,9 +751,22 @@ var markerBarCesar = new google.maps.Marker({
       icon: imageBarCesar,
       title: 'Bar Cesar'
   });
+var infoBarCesar = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Bar Cesar [Oakland, CA 07_13_2013]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>paella ' +
+      '<li type=disc>fried plantains ' +
+      '<li type=disc>romaine salad </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowBarCesar = new google.maps.InfoWindow({
+      content: infoBarCesar
+  });
 
 google.maps.event.addListener(markerBarCesar, 'click', function() {
-      window.open(markerBarCesar.url, '_blank');
+      infowindowBarCesar.open(map,markerBarCesar);
     });
 
 //End of Bar Cesar
@@ -545,9 +780,22 @@ var markerBigStar = new google.maps.Marker({
       icon: imageBigStar,
       title: 'Big Star'
   });
+var infoBigStar = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Big Star [Chicago, IL 04_14_2013]</h3>'+
+      '<div id="bodyContent">'+
+      '<ul><li type=disc>margaritas ' +
+      '<li type=disc>taco de panza ' +
+      '<li type=disc>taco de pollo </ul>'+
+      '</div>'+
+      '</div>';
+var infowindowBigStar = new google.maps.InfoWindow({
+      content: infoBigStar
+  });
 
 google.maps.event.addListener(markerBigStar, 'click', function() {
-      window.open(markerBigStar.url, '_blank');
+      infowindowBigStar.open(map,markerBigStar);
     });
 
 //End of Big Star
@@ -561,13 +809,23 @@ var Mendocino = new google.maps.LatLng(39.395955,-123.349435);
 var markerMendocino = new google.maps.Marker({
       position: Mendocino,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/3/post/2013/09/wine-country-in-mendocino-county.html',
       icon: imageMendocino,
       title: 'Mendocino County'
   });
+var infoMendocino = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Wine country [Mendocino County, CA 09_21_2013]</h3>'+
+      '<div id="bodyContent">'+
+      '<p>We got drunk - don\'t worry, we had a driver. </p> ' +
+      '</div>'+
+      '</div>';
+var infowindowMendocino = new google.maps.InfoWindow({
+      content: infoMendocino
+  });
 
 google.maps.event.addListener(markerMendocino, 'click', function() {
-      window.open(markerMendocino.url, '_blank');
+      infowindowMendocino.open(map,markerMendocino);
     });
 
 //End of Mendocino
@@ -578,13 +836,23 @@ var EmeraldBay = new google.maps.LatLng(38.955949,-119.945515);
 var markerEmeraldBay = new google.maps.Marker({
       position: EmeraldBay,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/3/post/2013/06/emerald-bay-in-lake-tahoe.html',
       icon: imageEB,
       title: 'South Lake Tahoe'
   });
+var infoEmeraldBay = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Emerald Bay State Park [South Lake Tahoe, CA 06_11_2013]</h3>'+
+      '<div id="bodyContent">'+
+      '<p>We traveled to Lake Tahoe and visited Emerald Bay State Park. </p> ' +
+      '</div>'+
+      '</div>';
+var infowindowEmeraldBay = new google.maps.InfoWindow({
+      content: infoEmeraldBay
+  });
 
 google.maps.event.addListener(markerEmeraldBay, 'click', function() {
-      window.open(markerEmeraldBay.url, '_blank');
+      infowindowEmeraldBay.open(map,markerEmeraldBay);
     });
 
 //End of Emerald Bay
@@ -595,13 +863,23 @@ var NorthLT = new google.maps.LatLng(39.285497,-120.108372);
 var markerNorthLT = new google.maps.Marker({
       position: NorthLT,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/3/post/2014/03/north-lake-tahoe.html',
       icon: imageNorthLT,
       title: 'North Lake Tahoe'
   });
+var infoNorthLT = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>North Star Resort [North Lake Tahoe, CA 03_03_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<p>Dropbox hosted their annual trip to Lake Tahoe! </p> ' +
+      '</div>'+
+      '</div>';
+var infowindowNorthLT = new google.maps.InfoWindow({
+      content: infoNorthLT
+  });
 
 google.maps.event.addListener(markerNorthLT, 'click', function() {
-      window.open(markerNorthLT.url, '_blank');
+      infowindowNorthLT.open(map,markerNorthLT);
     });
 
 //End of North Lake Tahoe
@@ -612,13 +890,23 @@ var HamPool = new google.maps.LatLng(30.333464,-98.119572);
 var markerHamPool = new google.maps.Marker({
       position: HamPool,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/3/post/2014/05/hamilton-pool-in-dripping-springs-tx.html',
       icon: imageHamPool,
       title: 'Hamilton Pool'
   });
+var infoHamPool = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Hamilton Pool [Dripping Springs, TX 05_05_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<p>We took a day trip on Cinco de Mayo! </p> ' +
+      '</div>'+
+      '</div>';
+var infowindowHamPool = new google.maps.InfoWindow({
+      content: infoHamPool
+  });
 
 google.maps.event.addListener(markerHamPool, 'click', function() {
-      window.open(markerHamPool.url, '_blank');
+      infowindowHamPool.open(map,markerHamPool);
     });
 
 //End of Hamilton Pool
@@ -629,13 +917,23 @@ var ANP = new google.maps.LatLng(38.6833,-109.5667);
 var markerANP = new google.maps.Marker({
       position: ANP,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/cliffs/arches-national-park',
       icon: imageANP,
       title: 'Arches National Park'
   });
+var infoANP = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Arches National Park [Moab, UT 09_13_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<p>Our first National Park together! </p> ' +
+      '</div>'+
+      '</div>';
+var infowindowANP = new google.maps.InfoWindow({
+      content: infoANP
+  });
 
 google.maps.event.addListener(markerANP, 'click', function() {
-      window.open(markerANP.url, '_blank');
+      infowindowANP.open(map,markerANP);
     });
 
 //End of Arches National Park
@@ -646,13 +944,23 @@ var CNP = new google.maps.LatLng(38.1669,-109.7597);
 var markerCNP = new google.maps.Marker({
       position: CNP,
       map: map,
-      url: 'http://cliffsandcalories.weebly.com/cliffs/canyonlands-national-park',
       icon: imageCNP,
       title: 'Canyonlands National Park'
   });
+var infoCNP = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3>Canyonlands National Park [Moab, UT 09_14_2014]</h3>'+
+      '<div id="bodyContent">'+
+      '<p>We hit two national parks in one weekend! </p> ' +
+      '</div>'+
+      '</div>';
+var infowindowCNP = new google.maps.InfoWindow({
+      content: infoCNP
+  });
 
 google.maps.event.addListener(markerCNP, 'click', function() {
-      window.open(markerCNP.url, '_blank');
+      infowindowCNP.open(map,markerCNP);
     });
 
 //End of Canyonlands National Park
@@ -668,20 +976,5 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <div id="googleMap"></div>
 </body>
 
-<br><br>
-
-<body>
-<div class="container">
-<div class="jumbotron">
-  <h1 id="jumbo">Cliffs</h1>
-  <p>...</p>
-</div>
-
-<div class="jumbotron">
-  <h1 id="jumbo">Calories</h1>
-  <p>...</p>
-</div>
-</div>
-</body>
 
 </html>
