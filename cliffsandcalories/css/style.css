@@ -47,8 +47,6 @@ a:hover {
 	text-decoration: none;
 }
 
-.nav-pills {
-	position: absolute;
-	right: 0;
-	margin: auto;
+#img_cal {
+	max-width: 300px;
 }
