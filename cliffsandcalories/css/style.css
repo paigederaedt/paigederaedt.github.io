@@ -25,6 +25,13 @@ h1 {
 	color: #000000;
 }
 
+h2 {
+	font-family: 'Loved by the King', cursive;
+	font-size: 40px;
+	text-align: left;
+	color: #000000;
+}
+
 h3 {
 	font-family: 'Loved by the King', cursive;
 	font-size: 20px;
@@ -48,7 +55,7 @@ a:hover {
 }
 
 #img_cal {
-	max-width: 250px;
+	max-width: 300px;
 	padding-bottom: 20px;
 	padding-left: 10px;
 }
