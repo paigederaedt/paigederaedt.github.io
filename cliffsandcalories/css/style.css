@@ -47,13 +47,8 @@ a:hover {
 	text-decoration: none;
 }
 
-.jumbotron {
-	padding-top: 20px;
-	padding-bottom:20px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-#jumbo {
-	text-align: left;
+.nav-pills {
+	position: absolute;
+	right: 0;
+	margin: auto;
 }
