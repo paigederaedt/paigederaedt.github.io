@@ -59,14 +59,14 @@ a:hover {
 }
 
 .col-sm-3:hover span.img-caption-text{
-	opacity:1;
+	opacity: 1;
 }
 
 span.img-caption-text {
   background: rgba(0,0,0,0.5);
   color: white;
   cursor: pointer;
-  display: table;
+  display: inline-block;
   left: 0;
   position: absolute;
   top: 0;
@@ -79,7 +79,6 @@ span.img-caption-text {
 }
  
 span.img-caption-text span {
-  display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
