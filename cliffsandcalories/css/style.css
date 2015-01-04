@@ -62,3 +62,7 @@ a:hover {
 	opacity:.85;
 	filter:alpha(opacity=75);
 }
+
+.buttongroups {
+	padding-right: 20px;
+}
