@@ -54,12 +54,12 @@ a:hover {
 	text-decoration: none;
 }
 
-.img_cal {
+#img_box {
 	max-width: 285px;
 	padding-bottom: 20px;
 }
 
-.img_cal:hover {
+#img_box:hover {
 	opacity:.85;
 	filter:alpha(opacity=75);
 }
