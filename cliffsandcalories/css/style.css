@@ -64,10 +64,10 @@ a:hover {
 
 span.img-caption-text {
   background: rgba(0,0,0,0.5);
-  color: white;
+  color: black;
   cursor: pointer;
   display: inline-block;
-  left: 0;
+  left: 20;
   position: absolute;
   top: 0;
   opacity: 0;
