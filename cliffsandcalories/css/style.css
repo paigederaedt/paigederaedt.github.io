@@ -59,8 +59,7 @@ a:hover {
 }
 
 .col-sm-3:hover span.img-caption-text{
-	opacity:.30;
-	filter:alpha(opacity=45);
+	opacity:1;
 }
 
 span.img-caption-text {
@@ -68,11 +67,10 @@ span.img-caption-text {
   color: white;
   cursor: pointer;
   display: table;
-  height: 150px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 150px;
+  opacity: 0;
     -webkit-transition: opacity .25s ease-in-out;
 	-moz-transition: opacity .25s ease-in-out;
 	-o-transition: opacity .25s ease-in-out;
