@@ -73,7 +73,8 @@ span.img-caption-text {
     left:15px;
     top:0px;
     z-index:95;
-	font-size:16px;
+    font-family: 'Andale Mono', monospaced;
+	font-size:26px;
 	font-style: bold;
 	line-height:40px;
   	background-color:transparent;
