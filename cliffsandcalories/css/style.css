@@ -63,8 +63,8 @@ a:hover {
 	filter:alpha(opacity=45);
 }
 
-.image-caption-text {
-	color:#000000;
+.img-caption-text {
+ 	color:#000000;
 	width:220px;
     height:167px;
     overflow:hidden;
@@ -85,7 +85,8 @@ a:hover {
 	-o-transition: opacity .25s ease-in-out;
 	-webkit-transition: opacity .25s ease-in-out;
 	transition: opacity .25s ease-in-out;
-	}
+}
+
 
 }
 
