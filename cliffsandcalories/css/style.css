@@ -66,11 +66,11 @@ a:hover {
 
 span.img-caption-text {
 	color:#000000;
-	width:220px;
-    height:167px;
+	width:285px;
+    height:285px;
     overflow:hidden;
     position:absolute;
-    left:0px;
+    left:20px;
     top:0px;
     z-index:95;
 	font-size:16px;
