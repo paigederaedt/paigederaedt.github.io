@@ -54,8 +54,12 @@ a:hover {
 	text-decoration: none;
 }
 
-#img_cal {
-	max-width: 275px;
+.img_cal {
+	max-width: 285px;
 	padding-bottom: 20px;
-	padding-left: 10px;
+}
+
+.img_cal:hover {
+	opacity:.85;
+	filter:alpha(opacity=75);
 }
