@@ -53,12 +53,12 @@ a:hover {
 	text-decoration: none;
 }
 
-.img_box {
+#img_box {
 	max-width: 285px;
 	padding-bottom: 20px;
 }
 
-.img_box:hover .img-caption-text {
+#img_box:hover .img-caption-text {
 	opacity:.30;
 	filter:alpha(opacity=45);
 }
