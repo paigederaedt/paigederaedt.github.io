@@ -63,13 +63,15 @@ a:hover {
 }
 
 span.img-caption-text {
-  background: rgba(0,0,0,0.5);
-  color: black;
+  background: transparent;
+  color: white;
   cursor: pointer;
   display: inline-block;
-  left: 20;
+  left: 30;
   position: absolute;
-  top: 0;
+  top: 30;
+  height: 285;
+  width: 285;
   opacity: 0;
     -webkit-transition: opacity .25s ease-in-out;
 	-moz-transition: opacity .25s ease-in-out;
@@ -79,8 +81,7 @@ span.img-caption-text {
 }
  
 span.img-caption-text span {
-  text-align: center;
-  vertical-align: middle;
+  text-align: left;
 }
 
 
