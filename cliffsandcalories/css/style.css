@@ -58,12 +58,33 @@ a:hover {
 	padding-bottom: 20px;
 }
 
-.col-sm-3:hover {
+.col-sm-3:hover span.img-caption-text{
 	opacity:.30;
 	filter:alpha(opacity=45);
 }
 
-
+span.img-caption-text {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+    -webkit-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-o-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
+}
+ 
+span.img-caption-text span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
 
 
 
