@@ -100,8 +100,13 @@ span.img-caption-text {
 	font-size: 18px;
 }
 
-.cal-summary-content {
+.summary-content {
 	text-align: center;
+}
+
+.summary-content:hover {
+	color: #006400;
+	text-decoration: none;
 }
 
 
