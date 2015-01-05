@@ -78,6 +78,7 @@ span.img-caption-text {
 	letter-spacing: -.03em;
 	word-spacing: -.05em;
 	line-height: 1em;
+	text-align: left;
   	background-color:transparent;
   	filter:alpha(opacity=0);
   	padding:15px 15px;
@@ -89,13 +90,10 @@ span.img-caption-text {
 	transition: opacity .25s ease-in-out;
 }
  
-span.img-caption-text span {
-  text-align: left;
-}
 
 #bodyContent {
 	font-family: 'Loved by the King', cursive;
-	font-size: 14px;
+	font-size: 18px;
 }
 
 
