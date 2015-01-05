@@ -67,6 +67,11 @@ a:hover {
 	padding-bottom: 20px;
 }
 
+#img_box_3 {
+	max-width: 450px;
+	padding-bottom: 20px;
+}
+
 .col-sm-3:hover span.img-caption-text{
 	opacity:.65;
 	filter:alpha(opacity=55);
