@@ -48,6 +48,10 @@ a {
 	-ms-transition: color .1s ease-in-out;
 }
 
+#blog {
+	text-align: right;
+}
+
 a:hover {
 	color: #006400;
 	text-decoration: none;
