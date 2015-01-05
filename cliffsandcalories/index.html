@@ -680,7 +680,8 @@ var infoScopa = '<div id="content">'+
       '</div>'+
       '</div>';
 var infowindowScopa = new google.maps.InfoWindow({
-      content: infoScopa
+      content: infoScopa,
+      minWidth: 300
   });
 
 google.maps.event.addListener(markerScopa, 'click', function() {
