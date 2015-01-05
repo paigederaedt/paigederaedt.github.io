@@ -60,6 +60,7 @@ a:hover {
 #img_box {
 	max-width: 285px;
 	padding-bottom: 20px;
+	max-height: 500px;
 }
 
 #img_box_2 {
@@ -68,7 +69,7 @@ a:hover {
 }
 
 #img_box_3 {
-	max-width: 300px;
+	max-width: 380px;
 	max-height: 500px;
 	padding-bottom: 20px;
 }
