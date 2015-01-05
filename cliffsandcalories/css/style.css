@@ -71,9 +71,9 @@ span.img-caption-text {
     overflow:hidden;
     position:absolute;
     left:15px;
-    top:0px;
+    top:15px;
     z-index:95;
-    font-family: 'Andale Mono', monospaced;
+    font-family: 'Loved by the King', cursive;
 	font-size:16px;
 	letter-spacing: -.03em;
 	word-spacing: -.05em;
