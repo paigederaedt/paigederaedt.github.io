@@ -68,7 +68,8 @@ a:hover {
 }
 
 #img_box_3 {
-	max-width: 450px;
+	max-width: 300px;
+	max-height: 500px;
 	padding-bottom: 20px;
 }
 
