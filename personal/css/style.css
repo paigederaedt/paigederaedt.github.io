@@ -1,0 +1,131 @@
+body {
+	background-color: #fff;
+	font-family: 'Andale Mono', monospaced;
+	color:	#161616;
+	line-height: 1em;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: -.03em;
+	word-spacing: -.05em;
+	padding-top: 20px;
+	padding-bottom:20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#googleMap {
+	width: 100%;
+}
+
+h1 {
+	font-family: 'Andale Mono', monospaced;
+	font-size: 100px;
+	text-align: center;
+	color: #000000;
+}
+
+h2 {
+	font-family: 'Andale Mono', monospaced;
+	font-size: 40px;
+	text-align: left;
+	color: #000000;
+}
+
+h3 {
+	font-family: 'Andale Mono', monospaced;
+	font-size: 20px;
+	text-align: left;
+	color: #000000;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+	transition: color .1s ease-in-out;
+	-webkit-transition: color .1s ease-in-out;
+	-moz-transition: color .1s ease-in-out;
+	-o-transition: color .1s ease-in-out;
+	-ms-transition: color .1s ease-in-out;
+}
+
+#blog {
+	text-align: right;
+}
+
+a:hover {
+	color: #006400;
+	text-decoration: none;
+}
+
+#img_box {
+	max-width: 285px;
+	padding-bottom: 20px;
+	max-height: 500px;
+}
+
+#img_box_2 {
+	max-width: 575px;
+	padding-bottom: 20px;
+}
+
+#img_box_3 {
+	max-width: 380px;
+	max-height: 500px;
+	padding-bottom: 20px;
+}
+
+#inline-with-text {
+	max-width: 400px;
+}
+
+.col-sm-3:hover span.img-caption-text{
+	opacity:.65;
+	filter:alpha(opacity=55);
+	background-color:#ffffff;
+}
+
+span.img-caption-text {
+	color:#000000;
+	width:285px;
+    height:285px;
+    overflow:hidden;
+    position:absolute;
+    left:15px;
+    top:0px;
+    z-index:95;
+    font-family: 'Andale Mono', monospaced;
+	font-size:22px;
+	letter-spacing: -.03em;
+	word-spacing: -.05em;
+	line-height: 1em;
+	text-align: left;
+  	background-color:transparent;
+  	filter:alpha(opacity=0);
+  	padding:15px 15px;
+  	opacity:0;
+  	-webkit-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-o-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
+}
+ 
+
+#bodyContent {
+	font-family: 'Andale Mono', monospaced;
+	font-size: 18px;
+}
+
+.summary-content {
+	text-align: center;
+	font-size: 22px;
+}
+
+
+.summary-content:hover {
+	color: #006400;
+	text-decoration: none;
+}
+
+
+
