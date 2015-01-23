@@ -50,6 +50,12 @@ a {
 	max-height: 500px;
 }
 
+#img_box2 {
+	max-width: 550px;
+	padding-bottom: 20px;
+	max-height: 500px;
+}
+
 #inline-with-text {
 	max-width: 400px;
 }
