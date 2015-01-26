@@ -50,8 +50,9 @@ a {
 	max-height: 500px;
 }
 
-#img_box1 {
-	horizontal-align: middle;
+img.centerImg {
+	margin-left: auto;
+	margin-right: auto;
 	padding-bottom: 20px;
 	max-height: 500px;
 }
