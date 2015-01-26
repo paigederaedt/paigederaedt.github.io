@@ -51,8 +51,7 @@ a {
 }
 
 #img_box1 {
-	margin-right: auto;
-	margin-left: auto;
+	horizontal-align: middle;
 	padding-bottom: 20px;
 	max-height: 500px;
 }
