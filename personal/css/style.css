@@ -118,7 +118,7 @@ a.navLink:hover {
 	text-decoration: line-through;
 }
 
-a.resumeLink {
+a.pageLink {
 	color: #81d8d0;
 	text-decoration: none;
 	transition: color .1s ease-in-out;
@@ -128,12 +128,12 @@ a.resumeLink {
 	-ms-transition: color .1s ease-in-out;
 }
 
-a.resumeLink:visited {
+a.pageLink:visited {
 	color: #81d8d0;
 	text-decoration: none;
 }
 
-a.resumeLink:hover {
+a.pageLink:hover {
 	color: #81d8d0;
 	text-decoration: line-through;
 }
