@@ -50,7 +50,7 @@ a {
 	max-height: 500px;
 }
 
-img.centerImg` {
+img.centerImg {
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 20px;
@@ -61,6 +61,12 @@ img.centerImg` {
 	max-width: 550px;
 	padding-bottom: 20px;
 	max-height: 500px;
+}
+
+#img_box3 {
+	max-width: 380px;
+	max-height: 500px;
+	padding-bottom: 20px;
 }
 
 #inline-with-text {
