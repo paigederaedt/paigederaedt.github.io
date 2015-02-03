@@ -58,6 +58,13 @@ img.centerImg {
 	max-height: 500px;
 }
 
+iframe.centerImg {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding-bottom: 20px;
+}
+
 #img_box2 {
 	max-width: 550px;
 	padding-bottom: 20px;
