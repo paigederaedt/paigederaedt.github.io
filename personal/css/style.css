@@ -75,8 +75,7 @@ iframe.centerImg {
 	max-width: 550px;
 	padding-bottom: 20px;
 	max-height: 500px;
-	margin-left: auto;
-	margin-right: auto;
+	align: middle;
 }
 
 #img_box3 {
