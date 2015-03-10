@@ -172,4 +172,12 @@ a.titleLink:hover {
 	color: black;
 }
 
+.video_container {
+	width: 100%;
+	position: relative;
+}
+
+.video_overlay {
+	position: absolute;
+}
 
