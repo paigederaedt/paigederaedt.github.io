@@ -20,6 +20,13 @@ h1 {
 	color: #000000;
 }
 
+h1.test {
+	font-family: 'Kristi', cursive;
+	font-size: 100px;
+	text-align: center;
+	color: white;
+}
+
 h2 {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 40px;
