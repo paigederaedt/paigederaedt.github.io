@@ -25,6 +25,8 @@ h1.test {
 	font-size: 100px;
 	text-align: center;
 	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 h2 {
@@ -141,6 +143,16 @@ a.navLink {
 	-ms-transition: color .1s ease-in-out;
 }
 
+a.navLinkTest {
+	color: white;
+	text-decoration: none;
+	transition: color .1s ease-in-out;
+	-webkit-transition: color .1s ease-in-out;
+	-moz-transition: color .1s ease-in-out;
+	-o-transition: color .1s ease-in-out;
+	-ms-transition: color .1s ease-in-out;
+}
+
 a.navLink:hover {
 	color: #81d8d0;
 	text-decoration: line-through;
@@ -181,6 +193,8 @@ a.titleLink:hover {
 
 .video_container {
 	width: 100%;
+	top: 0;
+	left: 0;
 	position: relative;
 }
 
