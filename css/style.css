@@ -196,9 +196,7 @@ a.titleLink:hover {
 }
 
 .video_container {
-	width: 100%;
-	margin: 0 auto;
-	display: block;
+	margin: auto;
 }
 
 .video_overlay {
