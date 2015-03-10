@@ -200,5 +200,6 @@ a.titleLink:hover {
 
 .video_overlay {
 	position: absolute;
+	width: 100%;
 }
 
