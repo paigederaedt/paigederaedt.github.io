@@ -57,6 +57,7 @@ a {
 	max-width: 275px;
 	padding-bottom: 20px;
 	max-height: 500px;
+	text-align: center;
 }
 
 img.centerImg {
@@ -78,6 +79,7 @@ iframe.centerImg {
 	max-width: 550px;
 	padding-bottom: 20px;
 	max-height: 500px;
+	text-align: center;
 }
 
 #img_box2_center {
@@ -85,12 +87,14 @@ iframe.centerImg {
 	padding-bottom: 20px;
 	max-height: 500px;
 	align: middle;
+	text-align: center;
 }
 
 #img_box3 {
 	max-width: 380px;
 	max-height: 500px;
 	padding-bottom: 20px;
+	text-align: center;
 }
 
 #inline-with-text {
@@ -101,6 +105,7 @@ iframe.centerImg {
 	opacity:.65;
 	filter:alpha(opacity=55);
 	background-color:#ffffff;
+	text-align: center;
 }
 
 span.img-caption-text {
