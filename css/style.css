@@ -215,7 +215,8 @@ a.titleLink:hover {
 
 .custom_container {
 	width: 100%;
+		margin: auto;
+	text-align: center;
 }
 
-}
 
