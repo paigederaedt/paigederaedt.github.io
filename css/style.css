@@ -205,3 +205,11 @@ a.titleLink:hover {
 	width: 100%;
 }
 
+.custom_container {
+	margin: auto;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+}
+
