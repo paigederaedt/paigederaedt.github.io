@@ -133,6 +133,10 @@ span.img-caption-text {
 	float: right;
 }
 
+.linksNavBarTest {
+	float: center;
+}
+
 a.navLink {
 	color: #000000;
 	text-decoration: none;
@@ -197,7 +201,8 @@ a.titleLink:hover {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	margin: auto;
+	margin: 0 auto;
+	display: block;
 }
 
 .video_overlay {
