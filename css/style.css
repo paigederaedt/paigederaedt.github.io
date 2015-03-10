@@ -197,7 +197,7 @@ a.titleLink:hover {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	
+	margin: auto;
 }
 
 .video_overlay {
