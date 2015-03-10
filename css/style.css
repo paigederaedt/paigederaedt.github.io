@@ -20,7 +20,7 @@ h1 {
 	color: #000000;
 }
 
-h1.test {
+h1.homePage {
 	font-family: 'Kristi', cursive;
 	font-size: 100px;
 	text-align: center;
@@ -133,7 +133,7 @@ span.img-caption-text {
 	float: right;
 }
 
-.linksNavBarTest {
+.linksNavBarHomePage {
 	float: center;
 }
 
@@ -147,7 +147,7 @@ a.navLink {
 	-ms-transition: color .1s ease-in-out;
 }
 
-a.navLinkTest {
+a.navLinkHomePage {
 	color: white;
 	text-decoration: none;
 	transition: color .1s ease-in-out;
@@ -159,6 +159,11 @@ a.navLinkTest {
 
 a.navLink:hover {
 	color: #81d8d0;
+	text-decoration: line-through;
+}
+
+a.navLinkHomePage:hover {
+	color: white;
 	text-decoration: line-through;
 }
 
