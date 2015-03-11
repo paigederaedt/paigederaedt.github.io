@@ -147,7 +147,7 @@ a.navLink {
 	-ms-transition: color .1s ease-in-out;
 }
 
-/*a.navLinkHomePage {
+a.navLinkHomePage {
 	color: white;
 	text-decoration: none;
 	transition: color .1s ease-in-out;
@@ -155,7 +155,7 @@ a.navLink {
 	-moz-transition: color .1s ease-in-out;
 	-o-transition: color .1s ease-in-out;
 	-ms-transition: color .1s ease-in-out;
-}*/
+}
 
 a.navLink:hover {
 	color: #81d8d0;
@@ -210,17 +210,7 @@ a.titleLink:hover {
 	position: absolute;
 	width: 100%;
 	bottom: 50%;
-}
-
-	.video_overlay.a.navLinkHomePage {
-	color: white;
-	text-decoration: none;
-	transition: color .1s ease-in-out;
-	-webkit-transition: color .1s ease-in-out;
-	-moz-transition: color .1s ease-in-out;
-	-o-transition: color .1s ease-in-out;
-	-ms-transition: color .1s ease-in-out;
-
+	z-index: 50;
 }
 
 .custom_container {
