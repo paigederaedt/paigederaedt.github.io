@@ -212,6 +212,17 @@ a.titleLink:hover {
 	bottom: 50%;
 }
 
+	.video_overlay.a.navLinkHomePage {
+	color: white;
+	text-decoration: none;
+	transition: color .1s ease-in-out;
+	-webkit-transition: color .1s ease-in-out;
+	-moz-transition: color .1s ease-in-out;
+	-o-transition: color .1s ease-in-out;
+	-ms-transition: color .1s ease-in-out;
+
+}
+
 .custom_container {
 	width: 90%;
 	margin: auto;
