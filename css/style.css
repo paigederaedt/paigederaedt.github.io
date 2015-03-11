@@ -147,7 +147,7 @@ a.navLink {
 	-ms-transition: color .1s ease-in-out;
 }
 
-a.navLinkHomePage {
+/*a.navLinkHomePage {
 	color: white;
 	text-decoration: none;
 	transition: color .1s ease-in-out;
@@ -155,7 +155,7 @@ a.navLinkHomePage {
 	-moz-transition: color .1s ease-in-out;
 	-o-transition: color .1s ease-in-out;
 	-ms-transition: color .1s ease-in-out;
-}
+}*/
 
 a.navLink:hover {
 	color: #81d8d0;
