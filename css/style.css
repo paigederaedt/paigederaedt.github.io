@@ -219,4 +219,23 @@ a.titleLink:hover {
 	text-align: center;
 }
 
+.sketchbook{
+	width:100%;
+	background-color: #F2F2F2;
+	text-align: center;
+	font-size: 0px;
+	letter-spacing: 35px;
+	line-height: 12px;
+	overflow: hidden;
+}
+.sketch-img{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.sketch-img img{
+	width:300px;
+	height: 300px;
+}
+
 
